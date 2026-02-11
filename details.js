@@ -6,7 +6,7 @@ function getProductId() {
 
 const productId = getProductId();
 
-fetch("assets/data.json")
+fetch("data.json")
   .then(response => response.json())
   .then(data => {
     const produit = data.produits.find(p => p.id == productId);
@@ -21,7 +21,7 @@ fetch("assets/data.json")
     detailsSection.innerHTML = `
       <div class="details-container">
         <div class="details-image">
-          <img src="assets/images/${produit.image}" alt="${produit.nom}">
+          <img src="images/${produit.image}" alt="${produit.nom}">
         </div>
         <div class="details-info">
           <h2>${produit.nom}</h2>
@@ -35,3 +35,4 @@ fetch("assets/data.json")
     `;
   })
   .catch(error => console.error("Erreur de chargement du JSON :", error));
+
