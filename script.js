@@ -1,4 +1,4 @@
-fetch("assets/data.json")
+fetch("data.json")
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById("products-container");
@@ -8,7 +8,7 @@ fetch("assets/data.json")
       card.classList.add("product-card");
 
       card.innerHTML = `
-        <img src="assets/images/${produit.image}" alt="${produit.nom}">
+        <img src="images/${produit.image}" alt="${produit.nom}">
         <h3>${produit.nom}</h3>
         <p>${produit.prix}</p>
         <a href="details.html?id=${produit.id}" class="btn small">Voir détails</a>
@@ -18,3 +18,4 @@ fetch("assets/data.json")
     });
   })
   .catch(error => console.error("Erreur de chargement du JSON :", error));
+
