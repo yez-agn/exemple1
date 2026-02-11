@@ -1,0 +1,34 @@
+{
+  "produits": [
+    {
+      "id": 1,
+      "nom": "Sac à main élégant",
+      "prix": "15 000 FCFA",
+      "image": "sac1.jpg"
+    },
+    {
+      "id": 2,
+      "nom": "Sac bandoulière chic",
+      "prix": "12 000 FCFA",
+      "image": "sac2.jpg"
+    },
+    {
+      "id": 3,
+      "nom": "Mini sac soirée",
+      "prix": "10 000 FCFA",
+      "image": "sac3.jpg"
+    },
+    {
+      "id": 4,
+      "nom": "Sac luxe",
+      "prix": "20 000 FCFA",
+      "image": "sac4.jpg"
+    },
+    {
+      "id": 5,
+      "nom": "Sac travail femme",
+      "prix": "18 000 FCFA",
+      "image": "sac5.jpg"
+    }
+  ]
+}
